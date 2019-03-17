@@ -28,4 +28,4 @@ class App {
   }
 }
 
-module.exports = new App().expresss
+module.exports = new App().express
