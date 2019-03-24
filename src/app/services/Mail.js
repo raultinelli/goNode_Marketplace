@@ -9,7 +9,7 @@ const transport = nodemailer.createTransport(mailConfig)
 transport.use(
   'compile',
   hbs({
-    viewEngine: exphbs(),
+    viewEngine: exphbs.create({ partialsDir: [] }),
     viewPath: path.resolve(__dirname, '..', 'views', 'emails'),
     extName: '.hbs'
   })
